@@ -13,4 +13,4 @@ RUN chmod +x /usr/local/bin/confd
 RUN mkdir -p /etc/confd/conf.d
 RUN mkdir -p /etc/confd/templates
 # 运行 confd
-RUN nohup confd -interval 2 -client-key $redis_password -backend redis -node  $redis_url &
+# RUN nohup confd -interval 2 -client-key $redis_password -backend redis -node  $redis_url &
