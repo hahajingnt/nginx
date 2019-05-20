@@ -1,4 +1,4 @@
-FROM nginx:stable-alpine
+FROM nginx:1.9-alpine
 
 # 安装 confd
 # Download the binary
