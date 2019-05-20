@@ -11,6 +11,5 @@ RUN chmod +x /usr/local/bin/confd
 RUN mkdir -p /etc/confd/conf.d
 RUN mkdir -p /etc/confd/templates
 # 运行 confd
-RUN echo "confd"
 
 ENTRYPOINT ["/acsstart"]
