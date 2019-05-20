@@ -14,4 +14,4 @@ RUN mkdir -p /etc/confd/templates
 
 RUN echo "confd"
 
-ENTRYPOINT ["acsstart"]
+ENTRYPOINT ["acsstart.sh"]
