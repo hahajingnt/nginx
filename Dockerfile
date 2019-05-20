@@ -13,4 +13,4 @@ RUN mkdir -p /etc/confd/templates
 # 运行 confd
 RUN echo "confd"
 
-ENTRYPOINT ["/bin"]
+ENTRYPOINT ["/bin/acsstart"]
