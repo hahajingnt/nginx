@@ -1,4 +1,4 @@
-FROM nginx:1.15.12-alpine-perl
+FROM nginx:1.15.12-alpine
 
 
 
