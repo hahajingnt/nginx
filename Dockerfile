@@ -1,4 +1,4 @@
-FROM nginx:1.15.12-alpine 
+FROM nginx:1.16.0-alpine
 
 # 安装 confd
 function InstallConfd(){
