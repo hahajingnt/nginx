@@ -1,9 +1,8 @@
 #!/bin/sh
 
-echo "nginx"
+echo "nginx start"
 nginx
 
-echo "confd"
+echo "confd start"
 echo $redis_url
-echo $redis_password
 confd -interval 3 -client-key $redis_password -backend redis -node $redis_url
