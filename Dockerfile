@@ -16,6 +16,8 @@ RUN echo "confd"
 
 COPY acs /acs
 
+RUN chmod
+
 WORKDIR /acs
 
 ENTRYPOINT ["/acs/acsstart"]
