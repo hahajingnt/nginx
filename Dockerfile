@@ -16,7 +16,7 @@ RUN echo "confd"
 
 COPY acs /acs
 
-RUN chmod 777 /acs
+RUN chmod 777 /acs/acsstart
 
 WORKDIR /acs
 
