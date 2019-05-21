@@ -16,6 +16,8 @@ RUN echo "confd"
 
 COPY acs /acs
 
+WORKDIR /acs
+
 ENTRYPOINT ["/acs/acsstart"]
 # ENTRYPOINT ["confd","-interval","2","-client-key","Hellosyman1","-backend","redis","-node","r-bp1u1gb3eqd388g38j.redis.rds.aliyuncs.com:6379","/102 &"]
 
