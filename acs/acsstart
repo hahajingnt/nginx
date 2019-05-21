@@ -4,4 +4,6 @@ echo "nginx"
 nginx
 
 echo "confd"
-confd -interval 2 -client-key Hellosyman1 -backend redis -node   r-bp1u1gb3eqd388g38j.redis.rds.aliyuncs.com:6379/102
+echo $redis_url
+echo $redis_password
+confd -interval 3 -client-key $redis_password -backend redis -node $redis_url
