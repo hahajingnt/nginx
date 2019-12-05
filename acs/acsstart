@@ -1,5 +1,11 @@
 #!/bin/sh
 
+echo "wget myconfig.conf.tmpl from $CONF_TMPL"
+wget -nv -O /etc/confd/templates/myconfig.conf.tmpl $CONF_TMPL
+
+echo "wget myconfig.toml from $CONF_TOML"
+wget -nv -O /etc/confd/conf.d/myconfig.toml $CONF_TOML
+
 echo "nginx start"
 nginx
 
